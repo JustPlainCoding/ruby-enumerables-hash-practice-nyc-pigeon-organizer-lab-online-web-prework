@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
         if !sorted_names.any?(name)
           organized_pigeons[name] = {}
           if names.any?(name)
-            organized_pigeons[name][key] << "#{attribute}"
+            if organized_pigeons[name].has_key?
           end
         end
       end
