@@ -1,4 +1,5 @@
 require "pry"
+
 def nyc_pigeon_organizer(data)
   sorted_names = []
   data.each do |(key, value)|
