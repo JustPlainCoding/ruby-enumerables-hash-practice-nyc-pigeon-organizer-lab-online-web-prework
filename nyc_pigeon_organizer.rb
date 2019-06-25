@@ -7,9 +7,6 @@ def nyc_pigeon_organizer(data)
       names.collect do |name|
         if !sorted_names.any?(name)
           sorted_names << name
-          if names.any?(name)
-            attribute
-             binding.pry
           end
         end
       end
