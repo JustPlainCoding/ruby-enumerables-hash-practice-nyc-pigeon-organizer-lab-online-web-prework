@@ -1,6 +1,7 @@
 require "pry"
-sorted_names = []
+
 def nyc_pigeon_organizer(data)
+  sorted_names = []
   data.each do |(key, value)|
     value.each do |(attribute, names)|
       names.collect do |name|
