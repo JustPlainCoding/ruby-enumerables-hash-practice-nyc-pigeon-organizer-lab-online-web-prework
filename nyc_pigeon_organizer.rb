@@ -6,6 +6,7 @@ def nyc_pigeon_organizer(data)
         if !sorted_names.any?(name)
           sorted_names << name
         end
+      end
     end
   end
 end
