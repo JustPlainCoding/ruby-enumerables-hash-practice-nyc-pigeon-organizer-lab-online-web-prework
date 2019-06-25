@@ -6,11 +6,6 @@ def nyc_pigeon_organizer(data)
   data.each do |(key, value)|
     value.each do |(attribute, names)|
       names.collect do |name|
-        this_pigeon = {
-          color: [],
-          gender: [],
-          lives: []
-        }
         if !sorted_names.any?(name)
           organized_pigeons[name] = this_pigeon
           if names.any?(name)
