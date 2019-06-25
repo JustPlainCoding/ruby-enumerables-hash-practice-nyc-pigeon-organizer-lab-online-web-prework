@@ -1,5 +1,5 @@
 def nyc_pigeon_organizer(data)
   data.each do |attribute|
-    puts attribute
+    attribute
   end
 end
