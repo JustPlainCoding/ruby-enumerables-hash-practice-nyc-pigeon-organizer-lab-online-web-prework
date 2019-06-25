@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
   organized_pigeons = Hash.new
   data.each do |(key, value)|
     value.each do |(attribute, names)|
-      names.collect do |name|
+      names.each do |name|
         if !organized_pigeons.has_key?(name)
           organized_pigeons[name] = {}
         end
