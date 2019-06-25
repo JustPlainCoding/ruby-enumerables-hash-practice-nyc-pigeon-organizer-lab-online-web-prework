@@ -14,7 +14,6 @@ def nyc_pigeon_organizer(data)
         if !sorted_names.any?(name)
           organized_pigeons["#{name}"] = this_pigeon
           if names.any?(name)
-            this_pigeon[attribute] << "#{value}"
             binding.pry
           end
         end
