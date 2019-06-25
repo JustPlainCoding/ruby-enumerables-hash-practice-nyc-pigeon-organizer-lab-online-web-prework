@@ -9,6 +9,7 @@ def nyc_pigeon_organizer(data)
           sorted_names << name
           if names.any?(name)
             sorted_names << attribute
+          end
         end
       end
     end
