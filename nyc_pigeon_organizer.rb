@@ -17,5 +17,4 @@ def nyc_pigeon_organizer(data)
     end
   end
 organized_pigeons
-binding.pry
 end
