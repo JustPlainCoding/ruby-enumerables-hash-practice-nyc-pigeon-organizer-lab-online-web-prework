@@ -15,11 +15,11 @@ def nyc_pigeon_organizer(data)
           organized_pigeons[name] = this_pigeon
           if names.any?(name)
             organized_pigeons[name][key] << "#{attribute}"
-            binding.pry
           end
         end
       end
     end
   end
-  organized_pigeons
+organized_pigeons
+binding.pry
 end
