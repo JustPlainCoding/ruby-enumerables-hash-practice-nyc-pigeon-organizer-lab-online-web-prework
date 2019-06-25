@@ -13,6 +13,7 @@ def nyc_pigeon_organizer(data)
         else
           organized_pigeons[name][key] << "#{attribute}"
         end
+      end
     end
   end
 organized_pigeons
