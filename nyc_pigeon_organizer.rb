@@ -9,10 +9,10 @@ def nyc_pigeon_organizer(data)
           sorted_names << name
           if names.any?(name)
             attribute
+             binding.pry
           end
         end
       end
     end
   end
-  binding.pry
 end
