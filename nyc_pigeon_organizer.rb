@@ -6,10 +6,15 @@ def nyc_pigeon_organizer(data)
   data.each do |(key, value)|
     value.each do |(attribute, names)|
       names.collect do |name|
+        this_pigeon = {
+          color: [],
+          gender: [],
+          lives: []
+        }
         if !sorted_names.any?(name)
-          organized_pigeons["#{name}"] = {}
+          organized_pigeons["#{name}"] = this_pigeon
           if names.any?(name)
-            sorted_names << attribute
+            this_pigeon[attribute] << "#{value}"
             binding.pry
           end
         end
