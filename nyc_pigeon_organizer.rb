@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer(data)
   data.each do |attribute|
-    attribute.collect do |(key, value)|
+    attribute.each do |(key, value)|
       puts value
     end
   end
